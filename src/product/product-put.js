@@ -7,6 +7,7 @@
  *
  * @apiParam {String} name Product name
  * @apiParam {String} description Description of the product
+ * @apiParam {Number}  department Product Department ID
  *
  * @apiSuccess {Number} id ID of the Product
  * @apiErrorExample {json} Error-Response:
