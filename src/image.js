@@ -28,6 +28,7 @@
   * @apiParam {Number} id Image's unique ID
   *
   * @apiParam {String} file File name of the image
+  * @apiParam {File} req.file The uploaded file of image
   * @apiParam {Number} userId Author's User Id
   * @apiParam {Object} item Image's Item
   * @apiParam {Number} item.id Item ID
