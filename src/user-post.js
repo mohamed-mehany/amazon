@@ -1,9 +1,8 @@
 /**
- * @api {get} /user/:id Request User information
- * @apiName GetUser
+ * @api {Post} /user/ Create a new User
+ * @apiName CreateUser
  * @apiGroup User
  *
- * @apiParam {Number} id User's unique ID
  *
  * @apiSuccess {String} name Firstname of the User
  * @apiSuccess {String} email Email of the User
