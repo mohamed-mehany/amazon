@@ -13,7 +13,7 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "id",
-            "description": "<p>Product's unique ID.</p>"
+            "description": "<p>Product's unique ID</p>"
           }
         ]
       }
@@ -26,14 +26,14 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>Firstname of the User.</p>"
+            "description": "<p>Firstname of the User</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "description",
-            "description": "<p>Description of the product.</p>"
+            "description": "<p>Description of the product</p>"
           },
           {
             "group": "Success 200",
@@ -80,8 +80,17 @@ define({ "api": [
         ]
       }
     },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"UserNotFound\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "version": "0.0.0",
-    "filename": "src/controller.js",
+    "filename": "src/product.js",
     "groupTitle": "Product"
   },
   {
@@ -98,7 +107,7 @@ define({ "api": [
             "type": "Number",
             "optional": false,
             "field": "id",
-            "description": "<p>User's unique ID.</p>"
+            "description": "<p>User's unique ID</p>"
           }
         ]
       }
@@ -111,66 +120,40 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "name",
-            "description": "<p>Firstname of the User.</p>"
+            "description": "<p>Firstname of the User</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "email",
-            "description": "<p>Email of the User.</p>"
+            "description": "<p>Email of the User</p>"
           },
           {
             "group": "Success 200",
             "type": "Number",
             "optional": false,
             "field": "createdAt",
-            "description": "<p>Product time of creation (UNIX)</p>"
+            "description": "<p>User time of creation (UNIX)</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "address",
-            "description": "<p>User time of creation (UNIX)</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Object[]",
-            "optional": false,
-            "field": "items",
-            "description": "<p>Array of different types of the same product</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "items.size",
-            "description": "<p>Item's Size</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "items.color",
-            "description": "<p>Item's color</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Double",
-            "optional": false,
-            "field": "items.price",
-            "description": "<p>Item's Price</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "items.createdAt",
-            "description": "<p>Item time of creation (UNIX)</p>"
+            "description": "<p>Address of the User</p>"
           }
         ]
       }
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n  \"error\": \"UserNotFound\"\n}",
+          "type": "json"
+        }
+      ]
     },
     "version": "0.0.0",
     "filename": "src/user.js",
