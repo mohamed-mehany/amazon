@@ -1,16 +1,17 @@
 /**
- * @api {get} /message/:id Request Message information
- * @apiName GetMessage
+ * @api {get} /messages/:recieverId Request All Messages Between the current user and another reciever
+ * @apiName GetMessages
  * @apiGroup Message
  *
- * @apiParam {Number} id Message's unique ID
+ * @apiParam {Number} recieverId Reciever's unique ID
  *
- * @apiSuccess {String} text The Message content
- * @apiSuccess {Number} state The State of the Message
- * @apiSuccess {Number} senderID ID of the Sender User
- * @apiSuccess {Number} recieverID ID of the Reciever User
- * @apiSuccess {Number} createdAt Vendor time of creation (UNIX)
- * @apiSuccess {Number} updatedAt Vendor time of last update (UNIX)
+ * @apiSuccess {Object[]} messages Array of messages
+ * @apiSuccess {String} messages.text The Message content
+ * @apiSuccess {Number} messages.state The State of the Message
+ * @apiSuccess {Number} messages.senderID ID of the Sender User
+ * @apiSuccess {Number} messages.recieverID ID of the Reciever User
+ * @apiSuccess {Number} messages.createdAt Message time of creation (UNIX)
+ * @apiSuccess {Number} messages.updatedAt Message time of last update (UNIX)
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 404 Not Found
  *     {
