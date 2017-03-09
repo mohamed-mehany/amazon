@@ -1,5 +1,5 @@
 /**
- * @api {put} /departments/ Update an existing Department
+ * @api {put} /department/:id Update an existing Department
  * @apiName UpdateDepartment
  * @apiGroup Department
  *
