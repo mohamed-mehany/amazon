@@ -13,9 +13,9 @@
  * @apiSuccess {Number} createdAt User time of creation (UNIX)
  * @apiSuccess {Number} updatedAt User time of last update (UNIX)
  * @apiSuccess {String} token User authentication token
- * @apiSuccess {String} id ID of the User
+ * @apiSuccess {Number} id ID of the User
  * @apiSuccess {Object[]} items Array of items owned by the user
- * @apiSuccess {String} items.id Item ID
+ * @apiSuccess {Number} items.id Item ID
  * @apiSuccess {String} items.productId Item Product ID
  * @apiSuccess {Number} items.createdAt Item time of buying (UNIX)
  * @apiErrorExample {json} Error-Response:

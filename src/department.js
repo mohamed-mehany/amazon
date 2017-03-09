@@ -7,8 +7,8 @@
  *
  * @apiSuccess {String} name Name of the Department
  * @apiSuccess {String} description Description of the Department
- * @apiSuccess {Number} updatedAt Department time of creation (UNIX)
  * @apiSuccess {Number} createdAt Department time of creation (UNIX)
+ * @apiSuccess {Number} updatedAt Department time of last update (UNIX)
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 404 Not Found
  *     {
