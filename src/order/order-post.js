@@ -16,3 +16,21 @@
  *       "error": "InvalidName"
  *     }
  */
+ /**
+  * @api {Post} /order/items/ Create a new Item for an order
+  * @apiName CreateOrderItem
+  * @apiGroup Order
+  *
+  *
+  * @apiParam {Number} orderId Order ID
+  * @apiSuccess {Number} itemId Item ID
+  * @apiSuccess {String} productId Item Product ID
+  * @apiSuccess {Number} createdAt Item time of buying (UNIX)
+  *
+  * @apiSuccess {Number} id ID of the OrderItem
+  * @apiErrorExample {json} Error-Response:
+  *     HTTP/1.1 400 Bad Request
+  *     {
+  *       "error": "ItemNotFound"
+  *     }
+  */

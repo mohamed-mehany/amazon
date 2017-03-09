@@ -53,3 +53,22 @@
   *       "error": "InvalidDepartmentName"
   *     }
   */
+  /**
+   * @api {Post} /user/items/ Create a new Item for the current User
+   * @apiName CreateUserItem
+   * @apiGroup User
+   *
+   * @apiHeader {String} authorization Authorization token.
+   *
+   * @apiParam {Number} req.userId Current user ID
+   * @apiSuccess {Number} itemId Item ID
+   * @apiSuccess {String} productId Item Product ID
+   * @apiSuccess {Number} createdAt Item time of buying (UNIX)
+   *
+   * @apiSuccess {Number} id ID of the UserItem
+   * @apiErrorExample {json} Error-Response:
+   *     HTTP/1.1 400 Bad Request
+   *     {
+   *       "error": "ItemNotFound"
+   *     }
+   */

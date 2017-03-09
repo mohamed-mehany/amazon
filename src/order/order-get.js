@@ -11,6 +11,10 @@
  * @apiSuccess {Number} updatedAt Order time of last update (UNIX)
  * @apiSuccess {Number} userId Ordered User ID
  * @apiSuccess {Number} bankingInfoId Banking Info ID
+ * @apiSuccess {Object[]} items Array of items in this order
+ * @apiSuccess {Number} items.id Item ID
+ * @apiSuccess {String} items.productId Item Product ID
+ * @apiSuccess {Number} items.createdAt Item time of adding (UNIX)
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 404 Not Found
  *     {
