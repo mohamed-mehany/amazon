@@ -3,6 +3,7 @@
  * @apiName UpdateDepartment
  * @apiGroup Department
  *
+ * @apiParam {Number} id ID of the Department
  * @apiParam {String} name Name of the Department
  * @apiParam {String} description Description of the Department
  *
