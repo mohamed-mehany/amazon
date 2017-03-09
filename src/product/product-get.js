@@ -5,7 +5,7 @@
  *
  * @apiParam {Number} id Product's unique ID
  *
- * @apiSuccess {String} name Firstname of the User
+ * @apiSuccess {String} name Product name
  * @apiSuccess {String} description Description of the product
  * @apiSuccess {Number} createdAt Product time of creation (UNIX)
  * @apiSuccess {Number} updatedAt Product time of last update (UNIX)

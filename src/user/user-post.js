@@ -1,5 +1,5 @@
 /**
- * @api {Post} /user/ Create a new User
+ * @api {Post} /users/ Create a new User
  * @apiName CreateUser
  * @apiGroup User
  *

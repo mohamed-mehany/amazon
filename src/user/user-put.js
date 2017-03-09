@@ -1,5 +1,5 @@
 /**
- * @api {Put} /user/ Update an existing User
+ * @api {Put} /user/:id Update an existing User
  * @apiName UpdateUser
  * @apiGroup User
  *
