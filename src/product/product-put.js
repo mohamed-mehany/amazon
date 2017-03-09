@@ -3,6 +3,8 @@
  * @apiName UpdateProduct
  * @apiGroup Product
  *
+ * @apiParam {Number} id Product unique ID
+ *
  * @apiParam {String} name Product name
  * @apiParam {String} description Description of the product
  *

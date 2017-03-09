@@ -18,6 +18,8 @@
  * @apiName CreateProductItem
  * @apiGroup Product
  *
+ * @apiParam {Number} id Product unique ID
+ *
  * @apiParam {Number} size Item's Size
  * @apiParam {String} color Item's color
  * @apiParam {Double} price Item's Price
