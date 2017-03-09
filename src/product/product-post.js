@@ -8,6 +8,7 @@
  * @apiParam {Number}  department Product Department ID
  *
  * @apiSuccess {Number} id ID of the Product
+ *
  * @apiErrorExample {json} Error-Response:
  *     HTTP/1.1 400 Bad Request
  *     {
