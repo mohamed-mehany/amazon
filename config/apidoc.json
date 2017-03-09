@@ -1,0 +1,12 @@
+{
+  "name": "amazon",
+  "version": "0.0.1",
+  "description": "Shopping",
+  "sampleUrl": false,
+  "generator": {
+    "name": "apidoc",
+    "time": "2016-12-21T15:34:03.315Z",
+    "url": "http://apidocjs.com",
+    "version": "0.16.1"
+  }
+}
