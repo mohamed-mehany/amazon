@@ -1,0 +1,14 @@
+This script creates a docker image containing golang and rabbitmq server, exposing ports 15672 and 5672 and 8080 to the host machine's equivalent ports.
+after starting the container by running this script, sending a JSON message to a specific app
+can be done by sending the json object as the request body of an http request to the url "server_ip:8080/tag"
+where tag is the name of the destination app.
+
+
+The script can be run as follows:
+-----------------------------------
+
+** grant the script permissions
+$ chmod 700 auto-build
+
+** run the script
+$ ./auto-build
